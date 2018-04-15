@@ -7,7 +7,7 @@ services:
     labels:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
-  freecodecamp-chengdu-fcc-chengdu:
+  super-frog-documentation:
     mem_limit: 104857600
     image: super-frog/documentation:master
     environment:

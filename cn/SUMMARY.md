@@ -1,13 +1,12 @@
 # Summary
 
 * [简介](README.md)
-	* [建议](intro/suggestion.md)
 	* [快速开始](intro/getting-start.md)
 	* [贡献代码](intro/contributor-guide.md)
-* [数据库]()
-	* [同步/迁移]()
-	* [编写一个模型]()
-	* [代码生成]()
+* [数据库](database/index.md)
+	* [同步/迁移](database/migrate.md)
+	* [编写一个模型](database/model.md)
+	* [代码生成](database/gen_code.md)
 * [业务代码]()
 	* [Handler]()
 	* [入参处理]()

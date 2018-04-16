@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>贡献代码 · GitBook</title>
+        <title>入参处理 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../database/" />
+    <link rel="next" href="response.html" />
     
     
-    <link rel="prev" href="getting-start.html" />
+    <link rel="prev" href="handler.html" />
     
 
     </head>
@@ -103,9 +103,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="getting-start.html">
+        <li class="chapter " data-level="1.1.1" data-path="../intro/getting-start.html">
             
-                <a href="getting-start.html">
+                <a href="../intro/getting-start.html">
             
                     
                     快速开始
@@ -116,9 +116,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.2" data-path="contributor-guide.html">
+        <li class="chapter " data-level="1.1.2" data-path="../intro/contributor-guide.html">
             
-                <a href="contributor-guide.html">
+                <a href="../intro/contributor-guide.html">
             
                     
                     贡献代码
@@ -206,9 +206,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../handler/route.html">
+        <li class="chapter " data-level="1.3.1" data-path="route.html">
             
-                <a href="../handler/route.html">
+                <a href="route.html">
             
                     
                     路由
@@ -219,9 +219,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../handler/handler.html">
+        <li class="chapter " data-level="1.3.2" data-path="handler.html">
             
-                <a href="../handler/handler.html">
+                <a href="handler.html">
             
                     
                     Handler
@@ -232,9 +232,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../handler/incoming_validate.html">
+        <li class="chapter active" data-level="1.3.3" data-path="incoming_validate.html">
             
-                <a href="../handler/incoming_validate.html">
+                <a href="incoming_validate.html">
             
                     
                     入参处理
@@ -245,9 +245,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../handler/response.html">
+        <li class="chapter " data-level="1.3.4" data-path="response.html">
             
-                <a href="../handler/response.html">
+                <a href="response.html">
             
                     
                     响应
@@ -258,9 +258,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../handler/dependency_injection.html">
+        <li class="chapter " data-level="1.3.5" data-path="dependency_injection.html">
             
-                <a href="../handler/dependency_injection.html">
+                <a href="dependency_injection.html">
             
                     
                     依赖注入
@@ -271,9 +271,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../handler/gen_code.html">
+        <li class="chapter " data-level="1.3.6" data-path="gen_code.html">
             
-                <a href="../handler/gen_code.html">
+                <a href="gen_code.html">
             
                     
                     代码生成
@@ -422,7 +422,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >贡献代码</a>
+        <a href=".." >入参处理</a>
     </h1>
 </div>
 
@@ -437,8 +437,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x8D21;&#x732E;&#x8005;&#x6307;&#x5357;&#xFF1F;">&#x8D21;&#x732E;&#x8005;&#x6307;&#x5357;&#xFF1F;</h3>
-<p>&#x611F;&#x5174;&#x8DA3;&#x53EF;&#x4EE5;&#x8054;&#x7CFB; <code>admin@lanhao.name</code></p>
+                                <h3 id="&#x5165;&#x53C2;&#x5904;&#x7406;">&#x5165;&#x53C2;&#x5904;&#x7406;</h3>
+<p><code>frog</code>&#x7684;&#x5B97;&#x65E8;&#x662F;<strong>&#x91CD;&#x590D;&#x7684;&#x5DE5;&#x4F5C;&#x4EA4;&#x7ED9;&#x81EA;&#x52A8;&#x5316;&#x6765;&#x505A;</strong>&#xFF0C;</p>
+<p>&#x6240;&#x4EE5;&#x50CF;<strong>&#x5165;&#x53C2;&#x5904;&#x7406;</strong>&#x8FD9;&#x6837;&#x7684;&#x91CD;&#x590D;&#x3001;&#x7E41;&#x7410;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x5F53;&#x7136;&#x8981;&#x6362;&#x4E00;&#x79CD;&#x66F4;&#x4F18;&#x96C5;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x505A;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4ECE;&#x4E0A;&#x4E00;&#x8282;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#x622A;&#x53D6;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>const Event = {
+  //&#x540D;&#x5B57; string:1,64 in:body require
+  name: &apos;unamed&apos;,
+  //&#x65E5;&#x671F; string:10,10 in:body require
+  date: &apos;2018-01-01&apos;,
+  //&#x7C7B;&#x578B; enum:&#x5C0F;&#x6D3B;&#x52A8;,&#x4E13;&#x573A;&#x6D3B;&#x52A8;,&#x5927;&#x578B;&#x6D3B;&#x52A8; in:body
+  type: 1,
+  //&#x63CF;&#x8FF0; string:0,255 in:body
+  desc: &apos;&apos;,
+};
+</code></pre><p><code>frog</code> &#x91C7;&#x53D6; <strong>&#x58F0;&#x660E;&#x5B57;&#x9762;&#x91CF;</strong> &#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9A;&#x4E49;&#x5165;&#x53C2;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x8868;&#x793A;&#x7684;&#x662F; </p>
+<p><strong>name</strong>&#x5C5E;&#x6027;&#x53D6;&#x81EA;<strong>body.name</strong>&#xFF0C;&#x7C7B;&#x578B;&#x4E3A;<strong>&#x5B57;&#x7B26;&#x4E32;</strong>&#xFF0C;&#x957F;&#x5EA6;&#x5728;<strong>1-64</strong>&#x4E4B;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;<strong>&quot;unamed&quot;</strong></p>
+<p>&#x5176;&#x4ED6;&#x7684;&#x5C5E;&#x6027;&#x540C;&#x7406;&#xFF0C;<code>frog</code>&#x4F1A;&#x5728;&#x6BCF;&#x4E00;&#x6B21; <strong>build</strong> &#x65F6;&#xFF0C;</p>
+<p>&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A; <strong>&#x5165;&#x53C2;&#x5904;&#x7406;</strong> &#x7684;&#x7C7B;&#x3002;</p>
+<p><img src="https://camo.githubusercontent.com/980a7e9cb440f703ebd198d2c0278e7936f70985/687474703a2f2f626c756573746573742e6f73732d636e2d7368616e676861692e616c6979756e63732e636f6d2f67656e5f6f626a6563742e706e67" alt=""></p>
+<blockquote>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x8282;&#x6211;&#x4EEC;&#x4E0D;&#x8981;&#x592A;&#x62C5;&#x5FC3;&#x8FD9;&#x4E2A;&#x7C7B;&#x751F;&#x6210;&#x51FA;&#x6765;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x7528;&#x5230;&#x5B83;&#x3002;</p>
+<p>&#x540E;&#x9762;&#x5173;&#x4E8E;<strong>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</strong> &#x4EE5;&#x53CA; <strong>&#x4EE3;&#x7801;&#x751F;&#x6210;</strong> &#x7AE0;&#x8282;&#xFF0C;&#x4F1A;&#x4ECB;&#x7ECD;&#x5230;<code>frog</code>&#x5E95;&#x5C42;&#x662F;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x4E00;&#x8282;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x8BB0;&#x4F4F;&#x600E;&#x4E48;&#x53BB;&#x5B9A;&#x4E49;<strong>&#x5165;&#x53C2;&#x5904;&#x7406;</strong>&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
+</blockquote>
+<h4 id="&#x56DE;&#x5230;&#x6B63;&#x9898;">&#x56DE;&#x5230;&#x6B63;&#x9898;</h4>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x8981;&#x8BF4;&#x4E00;&#x4E0B;&#x600E;&#x4E48;&#x53BB;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F; </p>
+<pre><code>  {
+    //{&#x4E2D;&#x6587;&#x540D;&#x5B57;} {&#x7C7B;&#x578B;}:{&#x4E0B;&#x9650;},{&#x4E0A;&#x9650;} in:{&#x53C2;&#x6570;&#x4F4D;&#x7F6E;} [key:{&#x522B;&#x540D;}] [require]
+    {&#x952E;&#x540D;}:{&#x9ED8;&#x8BA4;&#x503C;}
+  }
+</code></pre><p>&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x4F8B;&#x5B50;&#x91CC;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x4F60;&#x5927;&#x6982;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x6240;&#x8868;&#x8FBE;&#x7684;&#x542B;&#x4E49;&#x3002;</p>
+<ul>
+<li><p>&#x4E2D;&#x6587;&#x540D;&#x5B57;</p>
+<p>&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x6587;&#x6863;&#x65F6;&#x7684;&#x53C2;&#x6570;&#x540D;&#x5B57;&#x63D0;&#x793A;&#x8BED;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x524D;&#x7AEF;&#x5C55;&#x793A;&#x7684;label&#x3002;</p>
+</li>
+<li><p>&#x7C7B;&#x578B;</p>
+<p>&#x53C2;&#x6570;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;string, number, []string, []number, enum{..}, []enum{...}</p>
+</li>
+<li><p>&#x4E0B;&#x9650;,&#x4E0A;&#x9650;</p>
+<p>&#x5BF9;&#x5E94;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x6216;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7C7B;&#x578B;&#x662F;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;&#x3002;
+&#x6B64;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x518D;&#x58F0;&#x660E;&#x4E00;&#x7EC4;&#x4E0A;&#x4E0B;&#x9650;&#x8868;&#x8FBE;&#x5143;&#x7D20;&#x7684;&#x8303;&#x56F4;&#xFF0C;
+&#x5982; []number:0,10:18,60  &#x8868;&#x793A;&#x6570;&#x7EC4;&#x957F;&#x5EA6;0-10&#xFF0C;&#x5143;&#x7D20;&#x53D6;&#x503C;&#x8303;&#x56F4;18-60.</p>
+</li>
+<li><p>&#x53C2;&#x6570;&#x4F4D;&#x7F6E;</p>
+<p>&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x4ECE;&#x54EA;&#x91CC;&#x83B7;&#x53D6;&#xFF0C;&#x4E00;&#x822C;&#x6709; body, query, params, headers</p>
+<p>&#x4E5F;&#x652F;&#x6301;&#x591A;&#x7EA7;&#xFF0C; in:body.title </p>
+</li>
+<li><p>&#x522B;&#x540D;</p>
+<p>&#x4E0A;&#x9762;&#x53EA;&#x5B9A;&#x4E49;&#x4E86;&#x53C2;&#x6570;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x7528;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x5C5E;&#x6027;key&#x53BB;&#x68C0;&#x7D22;&#xFF0C;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x522B;&#x540D;&#xFF0C;&#x5982;&#xFF1A; &#x53C2;&#x6570;&#x4F4D;&#x7F6E;&#x5728;  body.user_mobile
+&#x4F60;&#x5E0C;&#x671B;&#x6241;&#x5E73;&#x5316;&#x540E;&#x4F7F;&#x7528;&#x7B80;&#x5355;&#x4E00;&#x70B9;&#x7684; &apos;mobile&apos;,&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;</p>
+<pre><code>  {
+    //&#x7535;&#x8BDD; string:11,11 in:body key:user_mobile
+    mobile:&apos;&apos;,
+  }
+</code></pre></li>
+<li><p>[require]</p>
+<p>&#x662F;&#x5426;&#x5FC5;&#x586B;</p>
+</li>
+<li><p>&#x952E;&#x540D;</p>
+<p>&#x5199;&#x4EE3;&#x7801;&#x65F6;&#x4F7F;&#x7528;&#x7684; <strong>key</strong> &#x540D;&#x5B57;&#x3002;</p>
+</li>
+<li><p>&#x9ED8;&#x8BA4;&#x503C;</p>
+<p>&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x83B7;&#x5F97;&#x53C2;&#x6570;&#x65F6;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x540C;&#x6837;&#x6536;&#x5230;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x7EA6;&#x675F;&#x3002;</p>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -466,12 +532,12 @@
 
             
                 
-                <a href="getting-start.html" class="navigation navigation-prev " aria-label="Previous page: 快速开始">
+                <a href="handler.html" class="navigation navigation-prev " aria-label="Previous page: Handler">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../database/" class="navigation navigation-next " aria-label="Next page: 数据库">
+                <a href="response.html" class="navigation navigation-next " aria-label="Next page: 响应">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -482,7 +548,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"贡献代码","level":"1.1.2","depth":2,"next":{"title":"数据库","level":"1.2","depth":1,"path":"database/index.md","ref":"database/index.md","articles":[{"title":"同步/迁移","level":"1.2.1","depth":2,"path":"database/migrate.md","ref":"database/migrate.md","articles":[]},{"title":"编写一个模型","level":"1.2.2","depth":2,"path":"database/model.md","ref":"database/model.md","articles":[]},{"title":"代码生成","level":"1.2.3","depth":2,"path":"database/gen_code.md","ref":"database/gen_code.md","articles":[]}]},"previous":{"title":"快速开始","level":"1.1.1","depth":2,"path":"intro/getting-start.md","ref":"intro/getting-start.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*"},"file":{"path":"intro/contributor-guide.md","mtime":"2018-04-15T09:18:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-16T16:11:31.081Z"},"basePath":"..","book":{"language":"cn"}});
+            gitbook.page.hasChanged({"page":{"title":"入参处理","level":"1.3.3","depth":2,"next":{"title":"响应","level":"1.3.4","depth":2,"path":"handler/response.md","ref":"handler/response.md","articles":[]},"previous":{"title":"Handler","level":"1.3.2","depth":2,"path":"handler/handler.md","ref":"handler/handler.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*"},"file":{"path":"handler/incoming_validate.md","mtime":"2018-04-16T16:01:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-16T16:11:31.081Z"},"basePath":"..","book":{"language":"cn"}});
         });
     </script>
 </div>

@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>路由 · GitBook</title>
+        <title>路由 · super frog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="lanhao">
         
         
     
@@ -17,7 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
                 
             
                 
@@ -49,6 +61,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -60,6 +73,19 @@
     <link rel="next" href="handler.html" />
     
     
+    <link rel="prev" href="./" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]};
+    </script>
 
     </head>
     <body>
@@ -80,7 +106,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.lanhao.name" target="_blank" class="custom-link">开发者小蓝</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -190,14 +225,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     业务代码
             
-                </span>
+                </a>
             
 
             
@@ -287,67 +322,67 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter " data-level="1.4" data-path="../error/">
             
-                <span>
+                <a href="../error/">
             
                     
                     优雅地定义错误
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.5" data-path="../advantage/">
             
-                <span>
+                <a href="../advantage/">
             
                     
                     黑魔法系列
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" >
+        <li class="chapter " data-level="1.5.1" data-path="../advantage/jsoc.html">
             
-                <span>
+                <a href="../advantage/jsoc.html">
             
                     
                     jsoc文件
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" >
+        <li class="chapter " data-level="1.5.2" data-path="../advantage/auto_doc.html">
             
-                <span>
+                <a href="../advantage/auto_doc.html">
             
                     
                     自动化文档
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" >
+        <li class="chapter " data-level="1.5.3" data-path="../advantage/auto_client.html">
             
-                <span>
+                <a href="../advantage/auto_client.html">
             
                     
                     自动化客户端
             
-                </span>
+                </a>
             
 
             
@@ -358,28 +393,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" >
+        <li class="chapter " data-level="1.6" data-path="../more/">
             
-                <span>
+                <a href="../more/">
             
                     
                     扩展阅读
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" >
+        <li class="chapter " data-level="1.6.1" data-path="../more/ast.html">
             
-                <span>
+                <a href="../more/ast.html">
             
                     
                     关于抽象语法树的应用
             
-                </span>
+                </a>
             
 
             
@@ -435,16 +470,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x8DEF;&#x7531;">&#x8DEF;&#x7531;</h3>
+                                <h3 id="&#x8DEF;&#x7531;"><a name="&#x8DEF;&#x7531;" class="plugin-anchor" href="#&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DEF;&#x7531;</h3>
 <p>&#x4EE3;&#x7801;&#x793A;&#x4F8B;:</p>
-<pre><code>router.group(&apos;event&apos;).use(&apos;auth&apos;)
-  .post(&apos;&apos;, &apos;create_event&apos;)    // match: POST /event
-  .put(&apos;/{ID}&apos;, &apos;update_event&apos;); // match: PUT /event/123
+<pre class="language-"><code class="lang-javascript">router<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token string">&apos;event&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">&apos;auth&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;create_event&apos;</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">// match: POST /event</span>
+  <span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&apos;/{ID}&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;update_event&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// match: PUT /event/123</span>
 
-router.reset().group(&apos;event&apos;)
-  .get(&apos;&apos;, &apos;get_event_list&apos;) // match: GET /event
-  .get(&apos;{ID}&apos; &apos;get_event_profile&apos;);  // match: GET /event/123
-</code></pre><p><code>frog</code> &#x8DEF;&#x7531;&#x975E;&#x5E38;&#x76F4;&#x767D;&#xFF0C; </p>
+router<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token string">&apos;event&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;get_event_list&apos;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// match: GET /event</span>
+  <span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&apos;{ID}&apos;</span> <span class="token string">&apos;get_event_profile&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// match: GET /event/123</span>
+</code></pre>
+<p><code>frog</code> &#x8DEF;&#x7531;&#x975E;&#x5E38;&#x76F4;&#x767D;&#xFF0C; </p>
 <blockquote>
 <p>route[ .use({ <strong>middleware</strong> }) ].{ <strong>method</strong> }(&apos;{ <strong>path</strong> }&apos;, &apos;{ <strong>handler</strong> }&apos;)</p>
 </blockquote>
@@ -479,8 +515,12 @@ router.reset().group(&apos;event&apos;)
 
             
                 
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 业务代码">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="handler.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Handler">
+                
+                <a href="handler.html" class="navigation navigation-next " aria-label="Next page: Handler">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -491,7 +531,7 @@ router.reset().group(&apos;event&apos;)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"路由","level":"1.3.1","depth":2,"next":{"title":"Handler","level":"1.3.2","depth":2,"path":"handler/handler.md","ref":"handler/handler.md","articles":[]},"previous":{"title":"业务代码","level":"1.3","depth":1,"ref":"","articles":[{"title":"路由","level":"1.3.1","depth":2,"path":"handler/route.md","ref":"handler/route.md","articles":[]},{"title":"Handler","level":"1.3.2","depth":2,"path":"handler/handler.md","ref":"handler/handler.md","articles":[]},{"title":"入参处理","level":"1.3.3","depth":2,"path":"handler/incoming_validate.md","ref":"handler/incoming_validate.md","articles":[]},{"title":"响应","level":"1.3.4","depth":2,"path":"handler/response.md","ref":"handler/response.md","articles":[]},{"title":"依赖注入","level":"1.3.5","depth":2,"path":"handler/dependency_injection.md","ref":"handler/dependency_injection.md","articles":[]},{"title":"代码生成","level":"1.3.6","depth":2,"path":"handler/gen_code.md","ref":"handler/gen_code.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*"},"file":{"path":"handler/route.md","mtime":"2018-04-16T15:10:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-16T16:11:31.081Z"},"basePath":"..","book":{"language":"cn"}});
+            gitbook.page.hasChanged({"page":{"title":"路由","level":"1.3.1","depth":2,"next":{"title":"Handler","level":"1.3.2","depth":2,"path":"handler/handler.md","ref":"handler/handler.md","articles":[]},"previous":{"title":"业务代码","level":"1.3","depth":1,"path":"handler/index.md","ref":"handler/index.md","articles":[{"title":"路由","level":"1.3.1","depth":2,"path":"handler/route.md","ref":"handler/route.md","articles":[]},{"title":"Handler","level":"1.3.2","depth":2,"path":"handler/handler.md","ref":"handler/handler.md","articles":[]},{"title":"入参处理","level":"1.3.3","depth":2,"path":"handler/incoming_validate.md","ref":"handler/incoming_validate.md","articles":[]},{"title":"响应","level":"1.3.4","depth":2,"path":"handler/response.md","ref":"handler/response.md","articles":[]},{"title":"依赖注入","level":"1.3.5","depth":2,"path":"handler/dependency_injection.md","ref":"handler/dependency_injection.md","articles":[]},{"title":"代码生成","level":"1.3.6","depth":2,"path":"handler/gen_code.md","ref":"handler/gen_code.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github-buttons","-highlight","prism","prism-themes","-github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-xonokai.css"]},"github":{"url":"https://github.com/super-frog/frog-cmd"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"github-buttons":{"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"lanhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"super frog","language":"cn","links":{"sidebar":{"开发者小蓝":"http://www.lanhao.name"}},"gitbook":"*","description":"+1s"},"file":{"path":"handler/route.md","mtime":"2018-04-17T14:36:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-17T17:08:50.385Z"},"basePath":"..","book":{"language":"cn"}});
         });
     </script>
 </div>
@@ -501,7 +541,15 @@ router.reset().group(&apos;event&apos;)
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
         
     
         
@@ -518,10 +566,6 @@ router.reset().group(&apos;event&apos;)
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

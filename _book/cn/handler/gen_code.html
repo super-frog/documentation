@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>代码生成 · GitBook</title>
+        <title>代码生成 · super frog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="lanhao">
         
         
     
@@ -17,7 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
                 
             
                 
@@ -49,6 +61,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -57,9 +70,22 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../error/" />
+    
     
     <link rel="prev" href="dependency_injection.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]};
+    </script>
 
     </head>
     <body>
@@ -80,7 +106,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.lanhao.name" target="_blank" class="custom-link">开发者小蓝</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -190,14 +225,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     业务代码
             
-                </span>
+                </a>
             
 
             
@@ -287,67 +322,67 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter " data-level="1.4" data-path="../error/">
             
-                <span>
+                <a href="../error/">
             
                     
                     优雅地定义错误
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.5" data-path="../advantage/">
             
-                <span>
+                <a href="../advantage/">
             
                     
                     黑魔法系列
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" >
+        <li class="chapter " data-level="1.5.1" data-path="../advantage/jsoc.html">
             
-                <span>
+                <a href="../advantage/jsoc.html">
             
                     
                     jsoc文件
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" >
+        <li class="chapter " data-level="1.5.2" data-path="../advantage/auto_doc.html">
             
-                <span>
+                <a href="../advantage/auto_doc.html">
             
                     
                     自动化文档
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" >
+        <li class="chapter " data-level="1.5.3" data-path="../advantage/auto_client.html">
             
-                <span>
+                <a href="../advantage/auto_client.html">
             
                     
                     自动化客户端
             
-                </span>
+                </a>
             
 
             
@@ -358,28 +393,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" >
+        <li class="chapter " data-level="1.6" data-path="../more/">
             
-                <span>
+                <a href="../more/">
             
                     
                     扩展阅读
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" >
+        <li class="chapter " data-level="1.6.1" data-path="../more/ast.html">
             
-                <span>
+                <a href="../more/ast.html">
             
                     
                     关于抽象语法树的应用
             
-                </span>
+                </a>
             
 
             
@@ -435,7 +470,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h3 id="&#x4EE3;&#x7801;&#x751F;&#x6210;"><a name="&#x4EE3;&#x7801;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x4EE3;&#x7801;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x751F;&#x6210;</h3>
+<p>&#x770B;&#x4E86;&#x524D;&#x9762;&#x51E0;&#x8282;&#x4F60;&#x5E94;&#x8BE5;&#x5DF2;&#x7ECF;&#x6709;&#x4F53;&#x4F1A;&#xFF0C;</p>
+<p><code>frog</code>&#x5173;&#x4E8E;&#x5165;&#x53C2;&#x63D0;&#x53D6;&#x3001;&#x6821;&#x9A8C;&#x3001;&#x6241;&#x5E73;&#x5316;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x662F;&#x9690;&#x85CF;&#x5728;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#x7684;&#x3002;</p>
+<p>&#x800C;&#x6211;&#x4EEC;&#x771F;&#x6B63;&#x8981;&#x5199;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EA;&#x662F;<strong>&#x6241;&#x5E73;&#x5316;</strong>&#x4E4B;&#x540E;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8FD9;&#x624D;&#x662F;&#x4E0E;&#x6211;&#x4EEC;&#x4E1A;&#x52A1;&#x5F3A;&#x76F8;&#x5173;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x76F8;&#x5BF9;&#x524D;&#x7F6E;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;<strong>&#x5224;&#x65AD;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x3001;&#x957F;&#x5EA6;&#x3001;&#x6241;&#x5E73;&#x5316;</strong>&#x4E4B;&#x7C7B;&#x64CD;&#x4F5C;&#xFF0C;</p>
+<p>&#x8FD9;&#x79CD;&#x91CD;&#x590D;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x5F53;&#x7136;&#x662F;&#x4EA4;&#x7ED9;&#x81EA;&#x52A8;&#x5316;&#x6765;&#x5B8C;&#x6210;&#x5566;&#x3002;</p>
+<blockquote>
+<p><code>frog</code>&#x4E00;&#x8D2F;&#x8BA4;&#x4E3A;&#x65F6;&#x95F4;&#x662F;&#x6700;&#x5B9D;&#x8D35;&#x7684;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x65F6;&#x95F4;&#x4E0D;&#x5E94;&#x8BE5;&#x6D88;&#x8017;&#x5728;&#x91CD;&#x590D;&#x5B9A;&#x578B;&#x7684;&#x64CD;&#x4F5C;&#x91CC;&#x3002;</p>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -462,10 +506,14 @@
 
             
                 
-                <a href="dependency_injection.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 依赖注入">
+                <a href="dependency_injection.html" class="navigation navigation-prev " aria-label="Previous page: 依赖注入">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../error/" class="navigation navigation-next " aria-label="Next page: 优雅地定义错误">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -474,7 +522,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"代码生成","level":"1.3.6","depth":2,"next":{"title":"优雅地定义错误","level":"1.4","depth":1,"ref":"","articles":[]},"previous":{"title":"依赖注入","level":"1.3.5","depth":2,"path":"handler/dependency_injection.md","ref":"handler/dependency_injection.md","articles":[]},"dir":"neutral"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*"},"file":{"path":"handler/gen_code.md","mtime":"2018-04-16T14:56:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-16T16:11:31.081Z"},"basePath":"..","book":{"language":"cn"}});
+            gitbook.page.hasChanged({"page":{"title":"代码生成","level":"1.3.6","depth":2,"next":{"title":"优雅地定义错误","level":"1.4","depth":1,"path":"error/index.md","ref":"error/index.md","articles":[]},"previous":{"title":"依赖注入","level":"1.3.5","depth":2,"path":"handler/dependency_injection.md","ref":"handler/dependency_injection.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github-buttons","-highlight","prism","prism-themes","-github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-xonokai.css"]},"github":{"url":"https://github.com/super-frog/frog-cmd"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"github-buttons":{"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"lanhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"super frog","language":"cn","links":{"sidebar":{"开发者小蓝":"http://www.lanhao.name"}},"gitbook":"*","description":"+1s"},"file":{"path":"handler/gen_code.md","mtime":"2018-04-17T16:25:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-17T17:08:50.385Z"},"basePath":"..","book":{"language":"cn"}});
         });
     </script>
 </div>
@@ -484,7 +532,15 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
         
     
         
@@ -501,10 +557,6 @@
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

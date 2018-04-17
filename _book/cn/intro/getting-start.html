@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>快速开始 · GitBook</title>
+        <title>快速开始 · super frog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="lanhao">
         
         
     
@@ -17,7 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
                 
             
                 
@@ -49,6 +61,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +75,17 @@
     
     <link rel="prev" href="../" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]};
+    </script>
 
     </head>
     <body>
@@ -82,7 +106,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.lanhao.name" target="_blank" class="custom-link">开发者小蓝</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -192,14 +225,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
+        <li class="chapter " data-level="1.3" data-path="../handler/">
             
-                <span>
+                <a href="../handler/">
             
                     
                     业务代码
             
-                </span>
+                </a>
             
 
             
@@ -289,67 +322,67 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter " data-level="1.4" data-path="../error/">
             
-                <span>
+                <a href="../error/">
             
                     
                     优雅地定义错误
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.5" data-path="../advantage/">
             
-                <span>
+                <a href="../advantage/">
             
                     
                     黑魔法系列
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" >
+        <li class="chapter " data-level="1.5.1" data-path="../advantage/jsoc.html">
             
-                <span>
+                <a href="../advantage/jsoc.html">
             
                     
                     jsoc文件
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" >
+        <li class="chapter " data-level="1.5.2" data-path="../advantage/auto_doc.html">
             
-                <span>
+                <a href="../advantage/auto_doc.html">
             
                     
                     自动化文档
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" >
+        <li class="chapter " data-level="1.5.3" data-path="../advantage/auto_client.html">
             
-                <span>
+                <a href="../advantage/auto_client.html">
             
                     
                     自动化客户端
             
-                </span>
+                </a>
             
 
             
@@ -360,28 +393,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" >
+        <li class="chapter " data-level="1.6" data-path="../more/">
             
-                <span>
+                <a href="../more/">
             
                     
                     扩展阅读
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" >
+        <li class="chapter " data-level="1.6.1" data-path="../more/ast.html">
             
-                <span>
+                <a href="../more/ast.html">
             
                     
                     关于抽象语法树的应用
             
-                </span>
+                </a>
             
 
             
@@ -437,24 +470,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x5FEB;&#x901F;&#x5F00;&#x59CB;-">&#x5FEB;&#x901F;&#x5F00;&#x59CB; !</h3>
+                                <h3 id="&#x5FEB;&#x901F;&#x5F00;&#x59CB;-"><a name="&#x5FEB;&#x901F;&#x5F00;&#x59CB;-" class="plugin-anchor" href="#&#x5FEB;&#x901F;&#x5F00;&#x59CB;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FEB;&#x901F;&#x5F00;&#x59CB; !</h3>
 <ul>
 <li><p>&#x5168;&#x5C40;&#x5B89;&#x88C5; <strong>frog</strong></p>
-<pre><code>  npm install -g frog-cmd
+<pre class="language-"><code>  npm install -g frog-cmd
 </code></pre></li>
 <li><p>&#x521B;&#x5EFA;&#x9879;&#x76EE;</p>
-<pre><code>  frog create xxx
+<pre class="language-"><code>  frog create xxx
 
   cd xxx
 </code></pre></li>
 <li><p>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;</p>
-<pre><code> yarn
+<pre class="language-"><code> yarn
 </code></pre></li>
 <li><p>&#x6784;&#x5EFA;&#x4E00;&#x4E0B;</p>
-<pre><code>  frog build
+<pre class="language-"><code>  frog build
 </code></pre></li>
 <li><p>&#x8FD0;&#x884C;</p>
-<pre><code>  npm start
+<pre class="language-"><code>  npm start
 </code></pre></li>
 </ul>
 
@@ -500,7 +533,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.1.1","depth":2,"next":{"title":"贡献代码","level":"1.1.2","depth":2,"path":"intro/contributor-guide.md","ref":"intro/contributor-guide.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"快速开始","level":"1.1.1","depth":2,"path":"intro/getting-start.md","ref":"intro/getting-start.md","articles":[]},{"title":"贡献代码","level":"1.1.2","depth":2,"path":"intro/contributor-guide.md","ref":"intro/contributor-guide.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*"},"file":{"path":"intro/getting-start.md","mtime":"2018-04-16T08:30:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-16T16:11:31.081Z"},"basePath":"..","book":{"language":"cn"}});
+            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.1.1","depth":2,"next":{"title":"贡献代码","level":"1.1.2","depth":2,"path":"intro/contributor-guide.md","ref":"intro/contributor-guide.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"快速开始","level":"1.1.1","depth":2,"path":"intro/getting-start.md","ref":"intro/getting-start.md","articles":[]},{"title":"贡献代码","level":"1.1.2","depth":2,"path":"intro/contributor-guide.md","ref":"intro/contributor-guide.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github-buttons","-highlight","prism","prism-themes","-github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-xonokai.css"]},"github":{"url":"https://github.com/super-frog/frog-cmd"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"github-buttons":{"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"lanhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"super frog","language":"cn","links":{"sidebar":{"开发者小蓝":"http://www.lanhao.name"}},"gitbook":"*","description":"+1s"},"file":{"path":"intro/getting-start.md","mtime":"2018-04-16T08:30:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-17T17:08:50.385Z"},"basePath":"..","book":{"language":"cn"}});
         });
     </script>
 </div>
@@ -510,7 +543,15 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
         
     
         
@@ -527,10 +568,6 @@
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

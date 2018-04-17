@@ -4,7 +4,7 @@
 
 `frog`要求 **handler** 导出一个 `async function`, 如：
 
-```
+```javascript
 module.exports = async (Event) => {
   let model = EventModel.create(Event);
   let saved = await model.save(true);

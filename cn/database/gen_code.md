@@ -10,7 +10,7 @@
 
 如：
 
-```
+```javascript
 Field.name('title').char(64),
 Field.name('category').tinyint(true).index()
 ```

@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>同步/迁移 · GitBook</title>
+        <title>同步/迁移 · super frog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="lanhao">
         
         
     
@@ -17,7 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
                 
             
                 
@@ -49,6 +61,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,6 +75,17 @@
     
     <link rel="prev" href="./" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]};
+    </script>
 
     </head>
     <body>
@@ -82,7 +106,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://www.lanhao.name" target="_blank" class="custom-link">开发者小蓝</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -192,14 +225,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
+        <li class="chapter " data-level="1.3" data-path="../handler/">
             
-                <span>
+                <a href="../handler/">
             
                     
                     业务代码
             
-                </span>
+                </a>
             
 
             
@@ -289,67 +322,67 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter " data-level="1.4" data-path="../error/">
             
-                <span>
+                <a href="../error/">
             
                     
                     优雅地定义错误
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.5" data-path="../advantage/">
             
-                <span>
+                <a href="../advantage/">
             
                     
                     黑魔法系列
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" >
+        <li class="chapter " data-level="1.5.1" data-path="../advantage/jsoc.html">
             
-                <span>
+                <a href="../advantage/jsoc.html">
             
                     
                     jsoc文件
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" >
+        <li class="chapter " data-level="1.5.2" data-path="../advantage/auto_doc.html">
             
-                <span>
+                <a href="../advantage/auto_doc.html">
             
                     
                     自动化文档
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" >
+        <li class="chapter " data-level="1.5.3" data-path="../advantage/auto_client.html">
             
-                <span>
+                <a href="../advantage/auto_client.html">
             
                     
                     自动化客户端
             
-                </span>
+                </a>
             
 
             
@@ -360,28 +393,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" >
+        <li class="chapter " data-level="1.6" data-path="../more/">
             
-                <span>
+                <a href="../more/">
             
                     
                     扩展阅读
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" >
+        <li class="chapter " data-level="1.6.1" data-path="../more/ast.html">
             
-                <span>
+                <a href="../more/ast.html">
             
                     
                     关于抽象语法树的应用
             
-                </span>
+                </a>
             
 
             
@@ -437,7 +470,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x540C;&#x6B65;--&#x8FC1;&#x79FB;">&#x540C;&#x6B65; / &#x8FC1;&#x79FB;</h3>
+                                <h3 id="&#x540C;&#x6B65;--&#x8FC1;&#x79FB;"><a name="&#x540C;&#x6B65;--&#x8FC1;&#x79FB;" class="plugin-anchor" href="#&#x540C;&#x6B65;--&#x8FC1;&#x79FB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65; / &#x8FC1;&#x79FB;</h3>
 <p>&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#x7684;&#x540C;&#x6B65;&#x4E0E;&#x8FC1;&#x79FB;&#xFF0C;&#x5728;&#x591A;&#x73AF;&#x5883;&#x4EE5;&#x53CA;&#x534F;&#x540C;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
 <p><code>frog</code>&#x5728;&#x6BCF;&#x6B21; <strong>build</strong> &#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x6839;&#x636E;&#x5F53;&#x524D;&#x4EE3;&#x7801;&#x91CC;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x751F;&#x6210;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#xFF0C;</p>
 <p>&#x518D; <strong>diff</strong> &#x540C;&#x6B65;&#x5230;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
@@ -488,7 +521,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"同步/迁移","level":"1.2.1","depth":2,"next":{"title":"编写一个模型","level":"1.2.2","depth":2,"path":"database/model.md","ref":"database/model.md","articles":[]},"previous":{"title":"数据库","level":"1.2","depth":1,"path":"database/index.md","ref":"database/index.md","articles":[{"title":"同步/迁移","level":"1.2.1","depth":2,"path":"database/migrate.md","ref":"database/migrate.md","articles":[]},{"title":"编写一个模型","level":"1.2.2","depth":2,"path":"database/model.md","ref":"database/model.md","articles":[]},{"title":"代码生成","level":"1.2.3","depth":2,"path":"database/gen_code.md","ref":"database/gen_code.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*"},"file":{"path":"database/migrate.md","mtime":"2018-04-16T08:53:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-16T16:11:31.081Z"},"basePath":"..","book":{"language":"cn"}});
+            gitbook.page.hasChanged({"page":{"title":"同步/迁移","level":"1.2.1","depth":2,"next":{"title":"编写一个模型","level":"1.2.2","depth":2,"path":"database/model.md","ref":"database/model.md","articles":[]},"previous":{"title":"数据库","level":"1.2","depth":1,"path":"database/index.md","ref":"database/index.md","articles":[{"title":"同步/迁移","level":"1.2.1","depth":2,"path":"database/migrate.md","ref":"database/migrate.md","articles":[]},{"title":"编写一个模型","level":"1.2.2","depth":2,"path":"database/model.md","ref":"database/model.md","articles":[]},{"title":"代码生成","level":"1.2.3","depth":2,"path":"database/gen_code.md","ref":"database/gen_code.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github-buttons","-highlight","prism","prism-themes","-github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-xonokai.css"]},"github":{"url":"https://github.com/super-frog/frog-cmd"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"github-buttons":{"buttons":[{"user":"super-frog","repo":"frog-cmd","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"lanhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"super frog","language":"cn","links":{"sidebar":{"开发者小蓝":"http://www.lanhao.name"}},"gitbook":"*","description":"+1s"},"file":{"path":"database/migrate.md","mtime":"2018-04-16T08:53:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-17T17:08:50.385Z"},"basePath":"..","book":{"language":"cn"}});
         });
     </script>
 </div>
@@ -498,7 +531,15 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
         
     
         
@@ -515,10 +556,6 @@
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

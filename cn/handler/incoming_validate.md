@@ -6,7 +6,7 @@
 
 我们从上一节的例子里截取一段代码：
 
-```
+```javascript
 const Event = {
   //名字 string:1,64 in:body require
   name: 'unamed',
@@ -41,7 +41,7 @@ const Event = {
 
 我们还是要说一下怎么去定义一个参数的处理方式 
 
-```
+```javascript
   {
     //{中文名字} {类型}:{下限},{上限} in:{参数位置} [key:{别名}] [require]
     {键名}:{默认值}
@@ -78,7 +78,7 @@ const Event = {
   如果你想使用别名，如： 参数位置在  body.user_mobile
   你希望扁平化后使用简单一点的 'mobile',可以这样做
   
-  ```
+  ```javascript
     {
       //电话 string:11,11 in:body key:user_mobile
       mobile:'',

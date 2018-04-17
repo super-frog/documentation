@@ -3,7 +3,7 @@
 我们直接看一个例子：
 
 
-```
+```javascript
 const { Field, Table, Migrate, Presets } = require('xiaolan-db');
 
 module.exports = new Table('submit', {
@@ -16,7 +16,7 @@ module.exports = new Table('submit', {
 });
 ```
 
-```
+```sql
 CREATE TABLE `submit` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'primary id',
   `event_id` bigint(20) unsigned NOT NULL COMMENT '活动ID',

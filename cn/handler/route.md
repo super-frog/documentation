@@ -2,7 +2,7 @@
 
 代码示例:
 
-```
+```javascript
 router.group('event').use('auth')
   .post('', 'create_event')    // match: POST /event
   .put('/{ID}', 'update_event'); // match: PUT /event/123

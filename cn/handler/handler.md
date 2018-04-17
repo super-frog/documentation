@@ -20,7 +20,7 @@
 
 这一节，只需要记住:
 
-```
+```javascript
 router.post('', 'create_event')
 ```
 对应的业务逻辑是
@@ -31,7 +31,7 @@ router.post('', 'create_event')
 
 接下来，我们先看一个完整的例子，后面的几个章节都会从这个例子将开去。
 
-```
+```javascript
 'use strict';
 const EventModel = require('../definitions/models/Event.gen');
 
